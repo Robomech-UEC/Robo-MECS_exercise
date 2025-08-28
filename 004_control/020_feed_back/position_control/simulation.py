@@ -12,7 +12,7 @@ class Pole_simulation():
         # default value... simlation length: 12s, simulation step 0.02s
 
         # prepare environment
-        self.env = PendulumEnvCustom(render_mode="human", g=0.0)
+        self.env = PendulumEnvCustom(render_mode="human", g=4)
         self.obs = self.env.reset()
 
         # torque input
@@ -90,8 +90,8 @@ if __name__ == "__main__":
     dt = 0.02
     pole = Pole_simulation(T=T, dt=dt)
 
-    k_p = 1
-    k_i = 0
+    k_p = 2
+    k_i = 0.2
     k_d = 60
 
     def normalize_angle(angle):
