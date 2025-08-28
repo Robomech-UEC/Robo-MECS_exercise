@@ -1,7 +1,6 @@
 import gymnasium as gym
 import time
 import numpy as np
-import time
 from pole_model import PendulumEnvCustom
 import pandas as pd
 import matplotlib.pyplot as plt
