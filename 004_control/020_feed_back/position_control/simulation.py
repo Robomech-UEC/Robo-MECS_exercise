@@ -15,7 +15,7 @@ class Pole_simulation():
         self.env = PendulumEnvCustom(render_mode="human", g=4)
         self.obs = self.env.reset()
 
-        # torque input
+        # torque and reference value
         self.torque_value = 0.0
         self.ref_value = 0.0
 
@@ -33,8 +33,8 @@ class Pole_simulation():
         self.angle_list = []
         self.ref_list = []
 
+        # simulation status
         self.simtime = 0.0
-
         self.is_running = True
 
     # update simulation
@@ -56,14 +56,17 @@ class Pole_simulation():
     def torque_input(self, torque):
         self.torque_value = torque
 
+    # set reference value for simulation
     def ref_input(self, ref):
         self.ref_value = ref
 
+    # return current angle of the pendulum
     def angle(self):
         sin = self.obs[0]
         cos = self.obs[1]
         return np.arctan2(sin, cos)
 
+    # return current angular velocity
     def angular_vel(self):
         return self.obs[2]
 
@@ -76,6 +79,7 @@ class Pole_simulation():
         self.env.close()
         self.is_running = False
     
+    # plot angles and references
     def plot(self):
         t = np.arange(0, len(self.angle_list)*self.dt, self.dt)
         plt.plot(t, self.angle_list, label="Angle")
@@ -86,14 +90,17 @@ class Pole_simulation():
         plt.show()
 
 if __name__ == "__main__":
+    # initiate simulation environment
     T = 12
     dt = 0.02
     pole = Pole_simulation(T=T, dt=dt)
 
+    # PID controller gains
     k_p = 2
     k_i = 0.2
     k_d = 60
 
+    # angle normalization
     def normalize_angle(angle):
         if angle > np.pi:
             angle -= 2 * np.pi
@@ -101,9 +108,9 @@ if __name__ == "__main__":
             angle += 2 * np.pi
         return angle
 
-    # ref = input("input reference angle: ")
-    ref = 0
-    pole.ref_input(ref)
+    ref_id = 0
+    refs = [-np.pi/3, -np.pi/3, 0, np.pi/3]
+    refs_t = [0, 4, 8, 12]  # time to change reference
 
     error_ex = 0.0
     error_i = 0.0
@@ -111,10 +118,16 @@ if __name__ == "__main__":
         pole.update()
 
         if pole.is_running:
-           # PD control
+            # update reference
+            if ref_id < len(refs) and pole.simtime >= refs_t[ref_id]:
+                ref_id += 1
+                pole.ref_input(refs[ref_id])
+            
+            # PD control
             angle = pole.angle()
+            reference = refs[ref_id]
 
-            error = normalize_angle( float(ref) - pole.angle() )
+            error = normalize_angle( float(reference) - pole.angle() )
             error_d = error - error_ex
             error_i += error
             torque = -1 * ( k_p * error + k_i * error_i + k_d * error_d )
