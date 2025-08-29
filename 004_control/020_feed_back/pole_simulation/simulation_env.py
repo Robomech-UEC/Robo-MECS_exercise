@@ -1,10 +1,7 @@
-import gymnasium as gym
 import time
 import numpy as np
 from pole_model import PendulumEnvCustom
-import pandas as pd
 import matplotlib.pyplot as plt
-import os
 
 class Pole_simulation():
     def __init__(self, g=4, T=12.0, dt=0.02):
@@ -22,13 +19,7 @@ class Pole_simulation():
         self.T = T  # max time
         self.dt = dt  # time step
 
-        # create file for data
-        fname = "result.csv"
-        if os.path.exists(fname):
-            os.remove(fname)
-        self.df = pd.DataFrame({"time[s]", "angle[rad]", "ref[rad]"})
-        self.df.to_csv(fname, index=False)
-
+        # list for data
         self.angle_list = []
         self.ref_list = []
 
