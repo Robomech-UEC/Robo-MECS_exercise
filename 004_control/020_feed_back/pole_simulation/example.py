@@ -52,7 +52,7 @@ while True:
 
         # トルクを計算し、poleに入力する(pole.torque_input())
         # いったん、トルク0.1を入力
-        pole.torque_input(0.1)
+        pole.torque_input(0)
         ##################################
         time.sleep(dt)
     

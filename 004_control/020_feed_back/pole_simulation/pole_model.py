@@ -70,8 +70,8 @@ class PendulumEnvCustom(gym.Env):
 
     def reset(self, *, seed: int | None = None, options: dict | None = None):
         super().reset(seed=seed)
-        # reset state to 0deg, 0vel
-        self.state = np.array([0.0, 0.0])
+        # reset state to 180deg, 0vel
+        self.state = np.array([np.pi, 0.0])
         self.last_u = None
 
         if self.render_mode == "human":

@@ -7,11 +7,11 @@ import matplotlib.pyplot as plt
 import os
 
 class Pole_simulation():
-    def __init__(self, T=12.0, dt=0.02):
+    def __init__(self, g=4, T=12.0, dt=0.02):
         # default value... simlation length: 12s, simulation step 0.02s
 
         # prepare environment
-        self.env = PendulumEnvCustom(render_mode="human", g=4)
+        self.env = PendulumEnvCustom(render_mode="human", g=g)
         self.obs = self.env.reset()
 
         # torque and reference value
@@ -103,9 +103,8 @@ if __name__ == "__main__":
     pole = Pole_simulation(T=T, dt=dt)
 
     # PID controller gains
-    k_p = 2
+    k_p = 3
     k_i = 0
-    # k_d = 60
     k_d = 0
 
     # angle normalization
