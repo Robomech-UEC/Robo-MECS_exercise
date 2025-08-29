@@ -23,11 +23,11 @@ class PendulumEnvCustom(gym.Env):
     def __init__(self, render_mode: str | None = None, g=10.0):
         self.max_speed = 100
         self.max_torque = 100
-        self.dt = 0.02
+        self.dt = 0.05 # simulation step
         self.g = g
         self.m = 1.0
         self.l = 1.0
-        self.c = 10.0
+        self.c = 0.0 # friction coefficient
 
         self.render_mode = render_mode
 

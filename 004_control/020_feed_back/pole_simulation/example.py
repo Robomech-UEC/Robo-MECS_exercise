@@ -3,7 +3,7 @@ import numpy as np
 import time
 
 # initiate simulation environment
-T = 12
+T = 2
 dt = 0.02
 pole = Pole_simulation(T=T, dt=dt)
 

@@ -66,10 +66,13 @@ class Pole_simulation():
         angle = np.arctan2(sin, cos)
         # unnormalize angle
         if self.angle_list != []:
-            if angle - self.angle_list[len(self.angle_list)] > 3*np.pi:
+            idx_last = len(self.angle_list) -1
+            if angle - self.angle_list[idx_last] > np.pi:
+                angle -= 2*np.pi
+                print(f"angle_ex : {self.angle_list[idx_last]}, angle : {angle}")
+            elif angle - self.angle_list[idx_last] < -np.pi:
                 angle += 2*np.pi
-            elif angle - self.angle_list[len(self.angle_list)] < -3*np.pi:
-                angle -= 2*np.pi    
+                print(f"angle_ex : {self.angle_list[idx_last]}, angle : {angle}")
         return angle
     
     # return current angular velocity
