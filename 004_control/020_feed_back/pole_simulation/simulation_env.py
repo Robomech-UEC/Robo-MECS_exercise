@@ -100,10 +100,7 @@ if __name__ == "__main__":
 
     # angle normalization
     def normalize_angle(angle):
-        if angle > np.pi:
-            angle -= 2 * np.pi
-        elif angle < -np.pi:
-            angle += 2 * np.pi
+        angle = (angle + np.pi) % (2 * np.pi) - np.pi
         return angle
 
     ref_id = 0
