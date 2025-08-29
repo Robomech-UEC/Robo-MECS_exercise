@@ -18,6 +18,9 @@ k_d = 0
 # angle normalization
 def normalize_angle(angle):
     # 角度の正規化プログラム
+    ##################################
+
+    ##################################
     return angle
 
 ref_id = 0
@@ -38,7 +41,7 @@ while True:
             ref_id += 1
             pole.ref_input(refs[ref_id])
         
-        # PD control
+        # PID control
         # ここに制御則を書く。
         ##################################
         # 現在のpoleの角度と、目標角度
@@ -53,7 +56,7 @@ while True:
 
         # トルクを計算し、poleに入力する(pole.torque_input())
         # いったん、トルク0.1を入力
-        pole.torque_input(0)
+        pole.torque_input(1.8)
         ##################################
         time.sleep(dt)
     
