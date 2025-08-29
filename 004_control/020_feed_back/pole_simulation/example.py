@@ -3,7 +3,7 @@ import numpy as np
 import time
 
 # initiate simulation environment
-T = 2
+T = 12
 dt = 0.02
 pole = Pole_simulation(T=T, dt=dt)
 
@@ -17,10 +17,7 @@ k_d = 0
 
 # angle normalization
 def normalize_angle(angle):
-    if angle > np.pi:
-        angle -= 2 * np.pi
-    elif angle < -np.pi:
-        angle += 2 * np.pi
+    # 角度の正規化プログラム
     return angle
 
 ref_id = 0
@@ -49,6 +46,10 @@ while True:
         reference = refs[ref_id]
 
         # エラーを計算し、エラーの差分と、積分も計算する
+        # いったん、エラー0を代入
+        error = 0
+        # エラーを正規化する
+        error = normalize_angle(error)
 
         # トルクを計算し、poleに入力する(pole.torque_input())
         # いったん、トルク0.1を入力
