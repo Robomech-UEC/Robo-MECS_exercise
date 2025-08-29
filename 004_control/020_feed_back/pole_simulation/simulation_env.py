@@ -69,10 +69,8 @@ class Pole_simulation():
             idx_last = len(self.angle_list) -1
             if angle - self.angle_list[idx_last] > np.pi:
                 angle -= 2*np.pi
-                print(f"angle_ex : {self.angle_list[idx_last]}, angle : {angle}")
             elif angle - self.angle_list[idx_last] < -np.pi:
                 angle += 2*np.pi
-                print(f"angle_ex : {self.angle_list[idx_last]}, angle : {angle}")
         return angle
     
     # return current angular velocity

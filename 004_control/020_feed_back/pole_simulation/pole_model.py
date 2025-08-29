@@ -27,7 +27,7 @@ class PendulumEnvCustom(gym.Env):
         self.g = g
         self.m = 1.0
         self.l = 1.0
-        self.c = 0.0 # friction coefficient
+        self.c = 0.5 # friction coefficient
 
         self.render_mode = render_mode
 
