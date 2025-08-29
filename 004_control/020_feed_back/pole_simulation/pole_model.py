@@ -23,10 +23,11 @@ class PendulumEnvCustom(gym.Env):
     def __init__(self, render_mode: str | None = None, g=10.0):
         self.max_speed = 100
         self.max_torque = 100
-        self.dt = 0.05
+        self.dt = 0.02
         self.g = g
         self.m = 1.0
         self.l = 1.0
+        self.c = 10.0
 
         self.render_mode = render_mode
 
@@ -50,14 +51,14 @@ class PendulumEnvCustom(gym.Env):
         g = self.g
         m = self.m
         l = self.l
+        c = self.c
         dt = self.dt
 
         u = np.clip(u, -self.max_torque, self.max_torque)[0]
         self.last_u = u  # for rendering
         costs = angle_normalize(th) ** 2 + 0.1 * thdot**2 + 0.001 * (u**2)
 
-        newthdot = thdot + (3 * g / (2 * l) * np.sin(th) + 3.0 / (m * l**2) * u) * dt
-        newthdot = np.clip(newthdot, -self.max_speed, self.max_speed)
+        newthdot = thdot + (3 * g / (2 * l) * np.sin(th) + 3.0 / (m * l**2) * u - 3.0 * c / (m * l**2) * thdot) * dt
         newth = th + newthdot * dt
 
         self.state = np.array([newth, newthdot])

@@ -63,8 +63,15 @@ class Pole_simulation():
     def angle(self):
         sin = self.obs[0]
         cos = self.obs[1]
-        return np.arctan2(sin, cos)
-
+        angle = np.arctan2(sin, cos)
+        # unnormalize angle
+        if self.angle_list != []:
+            if angle - self.angle_list[len(self.angle_list)] > 3*np.pi:
+                angle += 2*np.pi
+            elif angle - self.angle_list[len(self.angle_list)] < -3*np.pi:
+                angle -= 2*np.pi    
+        return angle
+    
     # return current angular velocity
     def angular_vel(self):
         return self.obs[2]
@@ -96,8 +103,9 @@ if __name__ == "__main__":
 
     # PID controller gains
     k_p = 2
-    k_i = 0.2
-    k_d = 60
+    k_i = 0
+    # k_d = 60
+    k_d = 0
 
     # angle normalization
     def normalize_angle(angle):
