@@ -22,6 +22,7 @@ class Pole_simulation():
         # list for data
         self.angle_list = []
         self.ref_list = []
+        self.torque_list = []
 
         # simulation status
         self.simtime = 0.0
@@ -34,6 +35,7 @@ class Pole_simulation():
 
         self.angle_list.append(self.angle())
         self.ref_list.append(self.ref_value)
+        self.torque_list.append(self.torque_value)
 
         # update simulation time
         self.simtime += self.dt
@@ -80,16 +82,29 @@ class Pole_simulation():
     # plot angles and references
     def plot(self):
         t = np.arange(0, len(self.angle_list)*self.dt, self.dt)
-        plt.plot(t, self.angle_list, label="Angle")
-        plt.plot(t, self.ref_list, label="Reference")
-        plt.xlabel("Time [s]")
-        plt.ylabel("Angle [rad]")
-        plt.legend()
+        fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8, 6), sharex=True)
+
+        ax1.plot(t, self.angle_list, label="Angle")
+        ax1.plot(t, self.ref_list, label="Reference")
+        ax1.set_xlabel("Time [s]")
+        ax1.set_ylabel("Angle [rad]")
+        ax1.set_title("Angle and Reference")
+        ax1.legend()
+        ax1.grid(True)
+
+        ax2.plot(t, self.torque_list, label="Torque", color="orange")
+        ax2.set_xlabel("Time [s]")
+        ax2.set_ylabel("Torque [Nm]")
+        ax2.set_title("Torque")
+        ax2.legend()
+        ax2.grid(True)
+
+        plt.tight_layout()
         plt.show()
 
 if __name__ == "__main__":
     # initiate simulation environment
-    T = 12
+    T = 12.0
     dt = 0.02
     pole = Pole_simulation(T=T, dt=dt)
 
