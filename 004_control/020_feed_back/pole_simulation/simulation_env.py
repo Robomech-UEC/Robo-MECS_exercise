@@ -111,9 +111,9 @@ if __name__ == "__main__":
     pole = Pole_simulation(T=T, dt=dt)
 
     # PID controller gains
-    k_p = 2
-    k_i = 0.2
-    k_d = 30
+    k_p = 8
+    k_i = 0.05
+    k_d = 10
 
     # angle normalization
     def normalize_angle(angle):
