@@ -93,6 +93,8 @@ class Pole_simulation():
         ax1.grid(True)
 
         ax2.plot(t, self.torque_list, label="Torque", color="orange")
+        ax2.axhline(20, color="red", lw=1, ls="--")
+        ax2.axhline(-20, color="red", lw=1, ls="--")
         ax2.set_xlabel("Time [s]")
         ax2.set_ylabel("Torque [Nm]")
         ax2.set_title("Torque")
@@ -109,9 +111,9 @@ if __name__ == "__main__":
     pole = Pole_simulation(T=T, dt=dt)
 
     # PID controller gains
-    k_p = 10
-    k_i = 18 * dt
-    k_d = 1.5 / dt
+    k_p = 2
+    k_i = 0.2
+    k_d = 30
 
     # angle normalization
     def normalize_angle(angle):
