@@ -11,10 +11,14 @@ find_package(rclcpp REQUIRED)
 
 find_package(std_msgs REQUIRED)
 
-# add_executable()
+add_executable(robot_executor src/robot_executor.cpp)
+ament_target_dependencies(robot_executor rclcpp std_msgs)
 
 # nodes
 install(TARGETS
+  robot_executor
+
+  DESTINATION lib/${PROJECT_NAME}/
 )
 
 # directories
