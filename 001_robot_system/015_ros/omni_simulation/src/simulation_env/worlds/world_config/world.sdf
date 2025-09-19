@@ -1,0 +1,108 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="frame">
+    <static>true</static>
+    <!-- x y z roll pitch yaw -->
+    <pose>0 0 0 0 0 0</pose>
+    <link name="link">
+      <collision name="base_plate">
+        <pose>6 4 -0.05 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>12 8 0.1</size>
+          </box>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1000.0</mu>
+              <mu2>1000.0</mu2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>0.01</threshold>
+          </bounce>
+          <contact>
+            <ode>
+              <soft_cfm>0.0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+            </ode>
+          </contact>
+        </surface>
+      </collision>
+
+      <collision name="upper_plate_right">
+        <pose>2.7 0.9 0.595 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.8 1.8 0.01</size>
+          </box>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient> 反発係数
+            <threshold>0.01</threshold>
+          </bounce>
+          <contact>
+            <ode>
+              <soft_cfm>0.0</soft_cfm>  <!-- ソフトコンタクトパラメータ -->
+              <soft_erp>0.2</soft_erp>
+            </ode>
+          </contact>
+        </surface>
+      </collision>
+
+      <collision name="upper_plate_left">
+        <pose>6.3 0.9 0.595 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.8 1.8 0.01</size>
+          </box>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient> 反発係数
+            <threshold>0.01</threshold>
+          </bounce>
+          <contact>
+            <ode>
+              <soft_cfm>0.0</soft_cfm>  <!-- ソフトコンタクトパラメータ -->
+              <soft_erp>0.2</soft_erp>
+            </ode>
+          </contact>
+        </surface>
+      </collision>
+
+      <collision name="wall">
+        <pose>0 0 0 0 0 3.14159265</pose>
+        <geometry>
+          <mesh>
+            <uri>wall.dae</uri>
+          </mesh>
+        </geometry>      
+      </collision>
+
+      <visual name="visual">
+        <pose>0 0 0 0 0 3.14159265</pose>
+        <geometry>
+          <mesh>
+            <uri>world.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

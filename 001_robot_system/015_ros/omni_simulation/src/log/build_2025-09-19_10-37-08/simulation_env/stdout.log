@@ -1,0 +1,69 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/build/simulation_env
+-- Install configuration: ""
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/config
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/config/orca_controllers.yaml
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/launch
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/launch/view_robot.launch.py
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/model
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/model/base_flame.stl
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/model/base_cover.dae
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/model/orca_01_marker.dae
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/model/barrel.stl
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/model/wheel_base.dae
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/model/orca_02_marker.dae
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/model/base_cover.stl
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/model/cam.dae
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/model/wheel_base.stl
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/model/orca_00_marker.dae
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/urdf
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/urdf/controller
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/urdf/controller/servo_controller.xacro
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/urdf/controller/state_publisher.xacro
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/urdf/controller/wheel_controller.xacro
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/urdf/ORCA_urdf.xacro
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/urdf/sensor
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/urdf/sensor/camera.xacro
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/urdf/sensor/odom.xacro
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/urdf/sensor/imu.xacro
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/urdf/body
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/urdf/body/omni_macro.xacro
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/urdf/body/body_macro.xacro
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/urdf/body/arm.xacro
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/urdf/body/shape_macro.xacro
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/urdf/body/marker_macro.xacro
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/rviz
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/worlds
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/worlds/rescon.world
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/worlds/world_config
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/worlds/world_config/world.dae
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/worlds/world_config/world.stl
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/worlds/world_config/model.config
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/worlds/world_config/wall.dae
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/worlds/world_config/world.sdf
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/ament_index/resource_index/package_run_dependencies/simulation_env
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/ament_index/resource_index/parent_prefix_path/simulation_env
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/environment/ament_prefix_path.sh
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/environment/ament_prefix_path.dsv
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/environment/path.sh
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/environment/path.dsv
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/local_setup.bash
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/local_setup.sh
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/local_setup.zsh
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/local_setup.dsv
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/package.dsv
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/ament_index/resource_index/packages/simulation_env
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/cmake/simulation_envConfig.cmake
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/cmake/simulation_envConfig-version.cmake
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/simulation_env/share/simulation_env/package.xml

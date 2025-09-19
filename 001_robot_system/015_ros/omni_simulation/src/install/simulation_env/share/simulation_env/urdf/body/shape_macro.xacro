@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="https://www.ros.org/wiki/xacro" name="orca">
+    <xacro:macro name="surface">
+        <surcafe>
+            <friction>
+                <ode>
+                    <mu1>50</mu1>
+                    <mu2>25</mu2>
+                </ode>
+            </friction>
+            <contact>
+                <ode>
+                    <kp>25000</kp>
+                    <kd>0.05</kd>
+                    <damping_factor>0.004</damping_factor>
+                </ode>
+            </contact>
+        </surcafe>
+    </xacro:macro>
+    
+    <xacro:macro name="box_link" params="name x y z ofsx ofsy ofsz mass collision">
+        <link name = "${name}_link">
+            <visual>
+                <geometry>
+                    <box size="${x * 0.001} ${y * 0.001} ${z * 0.001}"/>
+                </geometry>
+                <material name="silver">
+                    <color rgba="0.75 0.75 0.75 1"/>
+                </material>
+                <origin rpy="0 0 0" xyz="${ofsx * 0.001} ${ofsy * 0.001} ${ofsz * 0.001}"/>
+            </visual>
+
+            <xacro:if value="${collision}">
+                <collision>
+                    <geometry>
+                        <box size="${x * 0.001} ${y * 0.001} ${z * 0.001}"/>
+                    </geometry>
+                    <origin rpy="0 0 0" xyz="${ofsx * 0.001} ${ofsy * 0.001} ${ofsz * 0.001}"/>
+                </collision>
+            </xacro:if>
+
+            <inertial>
+                <mass value="${mass * 0.001}"/>
+                <inertia ixx="${(1/12) * mass * (y*y + z*z) * 0.000001}" ixy="0.0" ixz="0.0"
+                         iyy="${(1/12) * mass * (x*x + z*z) * 0.000001}" iyz="0.0"
+                         izz="${(1/12) * mass * (x*x + y*y) * 0.000001}" />
+                <origin rpy="0 0 0" xyz="${ofsx * 0.001} ${ofsy * 0.001} ${ofsz * 0.001}"/>
+            </inertial>
+
+            <xacro:macro name="surcafe"/>
+        </link>
+    </xacro:macro>
+
+
+    <xacro:macro name="cylinder_link" params="name length radius ofsx ofsy ofsz mass collision">
+        <link name = "${name}_link">
+            <visual>
+                <geometry>
+                    <cylinder length="${length * 0.001}" radius="${radius * 0.001}"/>
+                </geometry>
+                <material name="silver">
+                    <color rgba="0.75 0.75 0.75 1"/>
+                </material>
+                <origin rpy="0 0 0" xyz="${ofsx * 0.001} ${ofsy * 0.001} ${ofsz * 0.001}"/>
+            </visual>
+
+            <xacro:if value="${collision}">
+                <collision>
+                    <geometry>
+                        <cylinder length="${length * 0.001}" radius="${radius * 0.001}"/>
+                    </geometry>
+                    <origin rpy="0 0 0" xyz="${ofsx * 0.001} ${ofsy * 0.001} ${ofsz * 0.001}"/>
+                </collision>
+            </xacro:if>
+
+            <inertial>
+                <mass value="${mass * 0.001}"/>
+                <inertia ixx="${( ( (1/4) * mass * radius*radius ) + ( (1/12)* mass * length*length ) )* 0.000001}" ixy="0.0" ixz="0.0"
+                         iyy="${( ( (1/4) * mass * radius*radius ) + ( (1/12)* mass * length*length ) )* 0.000001}" iyz="0.0"
+                         izz="${(1/2) * mass * radius*radius  * 0.000001}" />
+                <origin rpy="0 0 0" xyz="${ofsx * 0.001} ${ofsy * 0.001} ${ofsz * 0.001}"/>
+            </inertial>
+
+            <xacro:macro name="surcafe"/>
+        </link>
+    </xacro:macro>
+</robot>
