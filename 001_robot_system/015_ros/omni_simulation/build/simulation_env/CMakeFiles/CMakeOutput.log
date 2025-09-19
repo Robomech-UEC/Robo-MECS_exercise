@@ -447,3 +447,40 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/build/simulation_env/CMakeFiles/CMakeScratch/TryCompile-CnfhNf
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ad813/fast && gmake[1]: Entering directory '/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/build/simulation_env/CMakeFiles/CMakeScratch/TryCompile-CnfhNf'
+/usr/bin/gmake  -f CMakeFiles/cmTC_ad813.dir/build.make CMakeFiles/cmTC_ad813.dir/build
+gmake[2]: Entering directory '/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/build/simulation_env/CMakeFiles/CMakeScratch/TryCompile-CnfhNf'
+Building C object CMakeFiles/cmTC_ad813.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_ad813.dir/src.c.o -c /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/build/simulation_env/CMakeFiles/CMakeScratch/TryCompile-CnfhNf/src.c
+Linking C executable cmTC_ad813
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad813.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_ad813.dir/src.c.o -o cmTC_ad813 
+gmake[2]: Leaving directory '/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/build/simulation_env/CMakeFiles/CMakeScratch/TryCompile-CnfhNf'
+gmake[1]: Leaving directory '/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/build/simulation_env/CMakeFiles/CMakeScratch/TryCompile-CnfhNf'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+

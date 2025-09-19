@@ -1,0 +1,27 @@
+[0.011s] Invoking command in '/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/build/experiments': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/keyboard_joy:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/build/experiments -- -j16 -l16
+[0.037s] [ 50%] [32mBuilding CXX object CMakeFiles/exp1.dir/src/exp1.cpp.o[0m
+[4.824s] [100%] [32m[1mLinking CXX executable exp1[0m
+[5.052s] [100%] Built target exp1
+[5.056s] Invoked command in '/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/build/experiments' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/keyboard_joy:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/build/experiments -- -j16 -l16
+[5.072s] Invoking command in '/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/build/experiments': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/keyboard_joy:/opt/ros/humble /usr/bin/cmake --install /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/build/experiments
+[5.075s] -- Install configuration: ""
+[5.075s] -- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/lib/experiments/exp1
+[5.077s] -- Set runtime path of "/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/lib/experiments/exp1" to ""
+[5.077s] -- Up-to-date: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/launch
+[5.077s] -- Up-to-date: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/launch/exp1.launch.py
+[5.077s] -- Up-to-date: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/ament_index/resource_index/package_run_dependencies/experiments
+[5.077s] -- Up-to-date: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/ament_index/resource_index/parent_prefix_path/experiments
+[5.077s] -- Up-to-date: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/environment/ament_prefix_path.sh
+[5.077s] -- Up-to-date: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/environment/ament_prefix_path.dsv
+[5.078s] -- Up-to-date: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/environment/path.sh
+[5.078s] -- Up-to-date: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/environment/path.dsv
+[5.078s] -- Up-to-date: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/local_setup.bash
+[5.078s] -- Up-to-date: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/local_setup.sh
+[5.078s] -- Up-to-date: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/local_setup.zsh
+[5.078s] -- Up-to-date: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/local_setup.dsv
+[5.078s] -- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/package.dsv
+[5.078s] -- Up-to-date: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/ament_index/resource_index/packages/experiments
+[5.078s] -- Up-to-date: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/cmake/experimentsConfig.cmake
+[5.078s] -- Up-to-date: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/cmake/experimentsConfig-version.cmake
+[5.078s] -- Up-to-date: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/package.xml
+[5.078s] Invoked command in '/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/build/experiments' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/keyboard_joy:/opt/ros/humble /usr/bin/cmake --install /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/build/experiments
