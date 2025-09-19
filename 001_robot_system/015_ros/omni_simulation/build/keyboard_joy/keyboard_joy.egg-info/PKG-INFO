@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: keyboard_joy
+Version: 0.0.1
+Summary: A ROS 2 package to simulate joystick inputs with a keyboard.
+Maintainer: Atar Babgei
+Maintainer-email: atarbabgei@gmail.com
+License: MIT
+Requires-Dist: setuptools
+Requires-Dist: pynput
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

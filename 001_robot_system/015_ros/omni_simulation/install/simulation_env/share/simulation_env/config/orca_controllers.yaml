@@ -1,0 +1,37 @@
+orca:
+  controller_manager:
+    ros__parameters:
+      update_rate: 503  # Hz
+
+      joint_state_broadcaster:
+        type: joint_state_broadcaster/JointStateBroadcaster
+
+      wheel_controller:
+        type: velocity_controllers/JointGroupVelocityController
+
+      suspension_controller:
+        type: position_controllers/JointGroupPositionController
+
+      servo_controller:
+        type: position_controllers/JointGroupPositionController
+
+  wheel_controller:
+    ros__parameters:
+      joints:
+        - orca_wheel_front_joint
+        - orca_wheel_right_joint
+        - orca_wheel_left_joint
+
+  suspension_controller:
+    ros__parameters:
+      joints:
+        - orca_wheel_front_sus_joint
+        - orca_wheel_right_sus_joint
+        - orca_wheel_left_sus_joint
+
+  servo_controller:
+    ros__parameters:
+      joints:
+        - orca_cam_housing_joint
+      
+      interface_name: position

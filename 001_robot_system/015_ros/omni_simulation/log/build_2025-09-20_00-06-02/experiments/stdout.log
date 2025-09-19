@@ -1,0 +1,23 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/exp1.dir/src/exp1.cpp.o[0m
+[100%] [32m[1mLinking CXX executable exp1[0m
+[100%] Built target exp1
+-- Install configuration: ""
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/lib/experiments/exp1
+-- Set runtime path of "/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/lib/experiments/exp1" to ""
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/launch
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/launch/exp1.launch.py
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/ament_index/resource_index/package_run_dependencies/experiments
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/ament_index/resource_index/parent_prefix_path/experiments
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/environment/ament_prefix_path.sh
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/environment/ament_prefix_path.dsv
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/environment/path.sh
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/environment/path.dsv
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/local_setup.bash
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/local_setup.sh
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/local_setup.zsh
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/local_setup.dsv
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/package.dsv
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/ament_index/resource_index/packages/experiments
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/cmake/experimentsConfig.cmake
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/cmake/experimentsConfig-version.cmake
+-- Installing: /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/experiments/share/experiments/package.xml

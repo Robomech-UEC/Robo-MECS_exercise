@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+    <xacro:macro name="odom" params="robot_name">
+        <plugin name="${robot_name}_p3d_base_controller" filename="libgazebo_ros_p3d.so">
+            <ros>
+                <!-- <namespace>${robot_name}</namespace> -->
+                <remapping>odom:=/${robot_name}/odom</remapping>
+            </ros>
+            <frame_name>map</frame_name>
+            <body_name>${robot_name}_base_link</body_name>
+            <update_rate>10.0</update_rate>
+            <always_on>true</always_on>
+            <publishTF>true</publishTF>
+        </plugin>
+    </xacro:macro>
+</robot>
