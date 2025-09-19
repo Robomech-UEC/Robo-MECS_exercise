@@ -1,4 +1,0 @@
-[31mCMake Error at CMakeLists.txt:14 (add_executable):
-  add_executable called with incorrect number of arguments
-
-[0m
