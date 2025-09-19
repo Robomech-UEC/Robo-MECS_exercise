@@ -1,0 +1,27 @@
+[0.521s] Invoking command in '/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/keyboard_joy': PYTHONPATH=/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/build/keyboard_joy/prefix_override:/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/keyboard_joy/lib/python3.10/site-packages:${PYTHONPATH} /home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/keyboard_joy build --build-base /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/build/keyboard_joy/build install --record /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/build/keyboard_joy/install.log --single-version-externally-managed install_data
+[0.706s] running egg_info
+[0.716s] writing ../build/keyboard_joy/keyboard_joy.egg-info/PKG-INFO
+[0.717s] writing dependency_links to ../build/keyboard_joy/keyboard_joy.egg-info/dependency_links.txt
+[0.717s] writing entry points to ../build/keyboard_joy/keyboard_joy.egg-info/entry_points.txt
+[0.717s] writing requirements to ../build/keyboard_joy/keyboard_joy.egg-info/requires.txt
+[0.718s] writing top-level names to ../build/keyboard_joy/keyboard_joy.egg-info/top_level.txt
+[0.739s] reading manifest file '../build/keyboard_joy/keyboard_joy.egg-info/SOURCES.txt'
+[0.741s] writing manifest file '../build/keyboard_joy/keyboard_joy.egg-info/SOURCES.txt'
+[0.741s] running build
+[0.742s] running build_py
+[0.742s] copying keyboard_joy/__init__.py -> /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/build/keyboard_joy/build/lib/keyboard_joy
+[0.743s] copying keyboard_joy/joy_node.py -> /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/build/keyboard_joy/build/lib/keyboard_joy
+[0.743s] running install
+[0.749s] running install_lib
+[0.760s] running install_data
+[0.760s] copying resource/keyboard_joy -> /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/keyboard_joy/share/ament_index/resource_index/packages
+[0.760s] copying package.xml -> /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/keyboard_joy/share/keyboard_joy
+[0.760s] copying config/key_mappings.yaml -> /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/keyboard_joy/share/keyboard_joy/config
+[0.761s] copying launch/keyboard_joy.launch.py -> /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/keyboard_joy/share/keyboard_joy/launch
+[0.761s] running install_egg_info
+[0.770s] removing '/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/keyboard_joy/lib/python3.10/site-packages/keyboard_joy-0.0.1-py3.10.egg-info' (and everything under it)
+[0.771s] Copying ../build/keyboard_joy/keyboard_joy.egg-info to /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/keyboard_joy/lib/python3.10/site-packages/keyboard_joy-0.0.1-py3.10.egg-info
+[0.771s] running install_scripts
+[0.833s] Installing joy_node script to /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/keyboard_joy/lib/keyboard_joy
+[0.833s] writing list of installed files to '/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/build/keyboard_joy/install.log'
+[0.860s] Invoked command in '/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/keyboard_joy' returned '0': PYTHONPATH=/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/build/keyboard_joy/prefix_override:/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/install/keyboard_joy/lib/python3.10/site-packages:${PYTHONPATH} /home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/keyboard_joy build --build-base /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/build/keyboard_joy/build install --record /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/src/build/keyboard_joy/install.log --single-version-externally-managed install_data
