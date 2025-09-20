@@ -1,6 +1,5 @@
 #include "rclcpp/rclcpp.hpp"
 #include <math.h>
-#include "sensor_msgs/msg/imu.hpp"
 #include "std_msgs/msg/float64.hpp"
 #include "geometry_msgs/msg/twist.hpp"
 
@@ -43,4 +42,3 @@ int main(int argc, char **argv) {
     rclcpp::shutdown();
     return 0;
 }
-

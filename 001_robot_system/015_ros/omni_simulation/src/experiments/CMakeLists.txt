@@ -13,12 +13,22 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
+find_package(Eigen3 REQUIRED)
+include_directories(
+  PUBLIC $<BUILD_INTERFACE:${EIGEN3_INCLUDE_DIR}>
+)
+
+# executables
 add_executable(exp1 src/exp1.cpp)
-ament_target_dependencies(exp1 rclcpp geometry_msgs std_msgs sensor_msgs)
+ament_target_dependencies(exp1 rclcpp geometry_msgs std_msgs)
+
+add_executable(exp2 src/exp2.cpp)
+ament_target_dependencies(exp2 rclcpp geometry_msgs std_msgs Eigen3)
 
 # nodes
 install(TARGETS
   exp1
+  exp2
 
   DESTINATION lib/${PROJECT_NAME}/
 )

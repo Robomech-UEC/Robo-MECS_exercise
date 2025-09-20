@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="https://www.ros.org/wiki/xacro" name="orca">
-    <xacro:arg name="robot_name" default="orca_00"/>
+    <xacro:arg name="robot_name" default="orca"/>
     <xacro:property name="pkg_name" value="simulation_env" />
 
     <xacro:include filename="body/shape_macro.xacro"/>

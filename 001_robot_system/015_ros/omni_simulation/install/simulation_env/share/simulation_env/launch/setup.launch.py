@@ -13,14 +13,15 @@ import time
 
 def generate_launch_description():
     # file name and path
-    sim_pkg_name = "simulation_env"
+    pkg_name = "simulation_env"
     gazebo_ros_pkg = get_package_share_directory('gazebo_ros')
+    xacro_file_name = "ORCA_urdf.xacro"
 
     world_file = os.path.join(
-        get_package_share_directory(sim_pkg_name), 'worlds', 'rescon.world'
+        get_package_share_directory(pkg_name), 'worlds', 'rescon.world'
     )
     world_model_path = PathJoinSubstitution([
-        FindPackageShare(sim_pkg_name),
+        FindPackageShare(pkg_name),
         "worlds"
     ])
 
@@ -35,13 +36,45 @@ def generate_launch_description():
         launch_arguments={'world': world_file}.items(),
     )
 
+    robot_description_content = Command(
+        [
+            PathJoinSubstitution([FindExecutable(name="xacro")]),
+            " ",
+            PathJoinSubstitution(
+                [FindPackageShare(pkg_name), "urdf", xacro_file_name]
+            ),
+        ]
+    )
+
+    robot_state_publisher = Node(
+        package='robot_state_publisher',
+        executable='robot_state_publisher',
+        output='screen',
+        parameters=[{"robot_description": robot_description_content,}]
+    )
+
+    rviz_config_file = PathJoinSubstitution([
+        FindPackageShare(pkg_name),
+        "rviz",
+        "view_robot.rviz"
+    ])
+
+    rviz2 = Node(
+        package='rviz2',
+        executable='rviz2',
+        arguments=['-d', rviz_config_file],
+        output='screen',
+    )
+
     return LaunchDescription([
         set_model_env,
         gazebo,
+        robot_state_publisher,
+        rviz2,
 
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
-                [FindPackageShare(sim_pkg_name), '/launch/robot_spawner.launch.py']
+                [FindPackageShare(pkg_name), '/launch/robot_spawner.launch.py']
             ),
             launch_arguments={'robot_name': 'orca', 'spawn_x': '0.9', 'spawn_y' : '2.25'}.items()
         ),

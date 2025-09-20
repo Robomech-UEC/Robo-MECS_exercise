@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.sdf": "xml",
+        "*.urdf": "xml",
+        "*.xacro": "xml",
+        "*.world": "xml",
+        "deque": "cpp",
+        "string": "cpp",
+        "vector": "cpp"
+    }
+}
