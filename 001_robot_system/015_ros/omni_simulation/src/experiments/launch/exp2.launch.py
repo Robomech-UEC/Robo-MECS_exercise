@@ -13,6 +13,7 @@ from launch.actions import OpaqueFunction
 def generate_launch_description():
     pkg_name = "experiments"
     sim_pkg_name = "simulation_env"
+    robot_name = "orca"
 
     launch_fname = "setup.launch.py"
     sim = IncludeLaunchDescription(
@@ -21,13 +22,14 @@ def generate_launch_description():
         ),
     )
 
-    exp1 = Node(
+    exp2 = Node(
         package=pkg_name,
         executable="exp2",
         output="screen",
+        namespace=robot_name,
     )
 
     return LaunchDescription([
         sim,
-        exp1,
+        exp2,
     ])
