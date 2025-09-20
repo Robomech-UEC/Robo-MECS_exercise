@@ -25,10 +25,14 @@ ament_target_dependencies(exp1 rclcpp geometry_msgs std_msgs)
 add_executable(exp2 src/exp2.cpp)
 ament_target_dependencies(exp2 rclcpp geometry_msgs std_msgs Eigen3)
 
+add_executable(exp3 src/exp3.cpp)
+ament_target_dependencies(exp3 rclcpp sensor_msgs std_msgs)
+
 # nodes
 install(TARGETS
   exp1
   exp2
+  exp3
 
   DESTINATION lib/${PROJECT_NAME}/
 )
