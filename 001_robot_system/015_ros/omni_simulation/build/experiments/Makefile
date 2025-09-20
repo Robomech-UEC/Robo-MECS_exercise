@@ -198,78 +198,152 @@ experiments_uninstall/fast:
 .PHONY : experiments_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named exp1
+# Target rules for targets named cmd_vel_check
 
 # Build rule for target.
-exp1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 exp1
-.PHONY : exp1
+cmd_vel_check: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmd_vel_check
+.PHONY : cmd_vel_check
 
 # fast build rule for target.
-exp1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exp1.dir/build.make CMakeFiles/exp1.dir/build
-.PHONY : exp1/fast
+cmd_vel_check/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmd_vel_check.dir/build.make CMakeFiles/cmd_vel_check.dir/build
+.PHONY : cmd_vel_check/fast
 
 #=============================================================================
-# Target rules for targets named exp2
+# Target rules for targets named vel2wheels
 
 # Build rule for target.
-exp2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 exp2
-.PHONY : exp2
+vel2wheels: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vel2wheels
+.PHONY : vel2wheels
 
 # fast build rule for target.
-exp2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exp2.dir/build.make CMakeFiles/exp2.dir/build
-.PHONY : exp2/fast
+vel2wheels/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vel2wheels.dir/build.make CMakeFiles/vel2wheels.dir/build
+.PHONY : vel2wheels/fast
 
-src/exp1.o: src/exp1.cpp.o
-.PHONY : src/exp1.o
+#=============================================================================
+# Target rules for targets named quat2yaw
+
+# Build rule for target.
+quat2yaw: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quat2yaw
+.PHONY : quat2yaw
+
+# fast build rule for target.
+quat2yaw/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quat2yaw.dir/build.make CMakeFiles/quat2yaw.dir/build
+.PHONY : quat2yaw/fast
+
+#=============================================================================
+# Target rules for targets named pd_ctl
+
+# Build rule for target.
+pd_ctl: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pd_ctl
+.PHONY : pd_ctl
+
+# fast build rule for target.
+pd_ctl/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pd_ctl.dir/build.make CMakeFiles/pd_ctl.dir/build
+.PHONY : pd_ctl/fast
+
+src/cmd_vel_check.o: src/cmd_vel_check.cpp.o
+.PHONY : src/cmd_vel_check.o
 
 # target to build an object file
-src/exp1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exp1.dir/build.make CMakeFiles/exp1.dir/src/exp1.cpp.o
-.PHONY : src/exp1.cpp.o
+src/cmd_vel_check.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmd_vel_check.dir/build.make CMakeFiles/cmd_vel_check.dir/src/cmd_vel_check.cpp.o
+.PHONY : src/cmd_vel_check.cpp.o
 
-src/exp1.i: src/exp1.cpp.i
-.PHONY : src/exp1.i
+src/cmd_vel_check.i: src/cmd_vel_check.cpp.i
+.PHONY : src/cmd_vel_check.i
 
 # target to preprocess a source file
-src/exp1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exp1.dir/build.make CMakeFiles/exp1.dir/src/exp1.cpp.i
-.PHONY : src/exp1.cpp.i
+src/cmd_vel_check.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmd_vel_check.dir/build.make CMakeFiles/cmd_vel_check.dir/src/cmd_vel_check.cpp.i
+.PHONY : src/cmd_vel_check.cpp.i
 
-src/exp1.s: src/exp1.cpp.s
-.PHONY : src/exp1.s
+src/cmd_vel_check.s: src/cmd_vel_check.cpp.s
+.PHONY : src/cmd_vel_check.s
 
 # target to generate assembly for a file
-src/exp1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exp1.dir/build.make CMakeFiles/exp1.dir/src/exp1.cpp.s
-.PHONY : src/exp1.cpp.s
+src/cmd_vel_check.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmd_vel_check.dir/build.make CMakeFiles/cmd_vel_check.dir/src/cmd_vel_check.cpp.s
+.PHONY : src/cmd_vel_check.cpp.s
 
-src/exp2.o: src/exp2.cpp.o
-.PHONY : src/exp2.o
+src/pd_ctl.o: src/pd_ctl.cpp.o
+.PHONY : src/pd_ctl.o
 
 # target to build an object file
-src/exp2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exp2.dir/build.make CMakeFiles/exp2.dir/src/exp2.cpp.o
-.PHONY : src/exp2.cpp.o
+src/pd_ctl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pd_ctl.dir/build.make CMakeFiles/pd_ctl.dir/src/pd_ctl.cpp.o
+.PHONY : src/pd_ctl.cpp.o
 
-src/exp2.i: src/exp2.cpp.i
-.PHONY : src/exp2.i
+src/pd_ctl.i: src/pd_ctl.cpp.i
+.PHONY : src/pd_ctl.i
 
 # target to preprocess a source file
-src/exp2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exp2.dir/build.make CMakeFiles/exp2.dir/src/exp2.cpp.i
-.PHONY : src/exp2.cpp.i
+src/pd_ctl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pd_ctl.dir/build.make CMakeFiles/pd_ctl.dir/src/pd_ctl.cpp.i
+.PHONY : src/pd_ctl.cpp.i
 
-src/exp2.s: src/exp2.cpp.s
-.PHONY : src/exp2.s
+src/pd_ctl.s: src/pd_ctl.cpp.s
+.PHONY : src/pd_ctl.s
 
 # target to generate assembly for a file
-src/exp2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exp2.dir/build.make CMakeFiles/exp2.dir/src/exp2.cpp.s
-.PHONY : src/exp2.cpp.s
+src/pd_ctl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pd_ctl.dir/build.make CMakeFiles/pd_ctl.dir/src/pd_ctl.cpp.s
+.PHONY : src/pd_ctl.cpp.s
+
+src/quat2yaw.o: src/quat2yaw.cpp.o
+.PHONY : src/quat2yaw.o
+
+# target to build an object file
+src/quat2yaw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quat2yaw.dir/build.make CMakeFiles/quat2yaw.dir/src/quat2yaw.cpp.o
+.PHONY : src/quat2yaw.cpp.o
+
+src/quat2yaw.i: src/quat2yaw.cpp.i
+.PHONY : src/quat2yaw.i
+
+# target to preprocess a source file
+src/quat2yaw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quat2yaw.dir/build.make CMakeFiles/quat2yaw.dir/src/quat2yaw.cpp.i
+.PHONY : src/quat2yaw.cpp.i
+
+src/quat2yaw.s: src/quat2yaw.cpp.s
+.PHONY : src/quat2yaw.s
+
+# target to generate assembly for a file
+src/quat2yaw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quat2yaw.dir/build.make CMakeFiles/quat2yaw.dir/src/quat2yaw.cpp.s
+.PHONY : src/quat2yaw.cpp.s
+
+src/vel2wheels.o: src/vel2wheels.cpp.o
+.PHONY : src/vel2wheels.o
+
+# target to build an object file
+src/vel2wheels.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vel2wheels.dir/build.make CMakeFiles/vel2wheels.dir/src/vel2wheels.cpp.o
+.PHONY : src/vel2wheels.cpp.o
+
+src/vel2wheels.i: src/vel2wheels.cpp.i
+.PHONY : src/vel2wheels.i
+
+# target to preprocess a source file
+src/vel2wheels.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vel2wheels.dir/build.make CMakeFiles/vel2wheels.dir/src/vel2wheels.cpp.i
+.PHONY : src/vel2wheels.cpp.i
+
+src/vel2wheels.s: src/vel2wheels.cpp.s
+.PHONY : src/vel2wheels.s
+
+# target to generate assembly for a file
+src/vel2wheels.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vel2wheels.dir/build.make CMakeFiles/vel2wheels.dir/src/vel2wheels.cpp.s
+.PHONY : src/vel2wheels.cpp.s
 
 # Help Target
 help:
@@ -286,14 +360,22 @@ help:
 	@echo "... test"
 	@echo "... experiments_uninstall"
 	@echo "... uninstall"
-	@echo "... exp1"
-	@echo "... exp2"
-	@echo "... src/exp1.o"
-	@echo "... src/exp1.i"
-	@echo "... src/exp1.s"
-	@echo "... src/exp2.o"
-	@echo "... src/exp2.i"
-	@echo "... src/exp2.s"
+	@echo "... cmd_vel_check"
+	@echo "... pd_ctl"
+	@echo "... quat2yaw"
+	@echo "... vel2wheels"
+	@echo "... src/cmd_vel_check.o"
+	@echo "... src/cmd_vel_check.i"
+	@echo "... src/cmd_vel_check.s"
+	@echo "... src/pd_ctl.o"
+	@echo "... src/pd_ctl.i"
+	@echo "... src/pd_ctl.s"
+	@echo "... src/quat2yaw.o"
+	@echo "... src/quat2yaw.i"
+	@echo "... src/quat2yaw.s"
+	@echo "... src/vel2wheels.o"
+	@echo "... src/vel2wheels.i"
+	@echo "... src/vel2wheels.s"
 .PHONY : help
 
 

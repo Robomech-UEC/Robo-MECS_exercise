@@ -376,9 +376,6 @@ rcl_yaml_param_parser_DIR:PATH=/opt/ros/humble/share/rcl_yaml_param_parser/cmake
 //The directory containing a CMake configuration file for rclcpp.
 rclcpp_DIR:PATH=/opt/ros/humble/share/rclcpp/cmake
 
-//The directory containing a CMake configuration file for rcocpp.
-rcocpp_DIR:PATH=rcocpp_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for rcpputils.
 rcpputils_DIR:PATH=/opt/ros/humble/share/rcpputils/cmake
 
@@ -688,8 +685,6 @@ _Python3_EXECUTABLE:INTERNAL=/home/hibiki/.espressif/python_env/idf5.4_py3.10_en
 //Python3 Properties
 _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;12;64;;cpython-310-x86_64-linux-gnu;/usr/lib/python3.10;/usr/lib/python3.10;/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages;/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=cc25393523eb3c34c03e3c18ec930be3
-//Interpreter reason failure
-_Python3_Interpreter_REASON_FAILURE:INTERNAL=
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=
 __pkg_config_arguments__OPENSSL:INTERNAL=QUIET;openssl

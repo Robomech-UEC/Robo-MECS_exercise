@@ -1,11 +1,12 @@
 <?xml version="1.0" ?>
 <sdf version="1.6">
+  <include>model://ground_plane</include>
   <model name="frame">
     <static>true</static>
     <!-- x y z roll pitch yaw -->
     <pose>0 0 0 0 0 0</pose>
     <link name="link">
-      <collision name="base_plate">
+      <!-- <collision name="base_plate">
         <pose>6 4 -0.05 0 0 0</pose>
         <geometry>
           <box>
@@ -30,7 +31,7 @@
             </ode>
           </contact>
         </surface>
-      </collision>
+      </collision> -->
 
       <collision name="upper_plate_right">
         <pose>2.7 0.9 0.595 0 0 0</pose>

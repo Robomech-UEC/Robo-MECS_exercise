@@ -19,20 +19,24 @@ include_directories(
 )
 
 # executables
-add_executable(exp1 src/exp1.cpp)
-ament_target_dependencies(exp1 rclcpp geometry_msgs std_msgs)
+add_executable(cmd_vel_check src/cmd_vel_check.cpp)
+ament_target_dependencies(cmd_vel_check rclcpp geometry_msgs std_msgs)
 
-add_executable(exp2 src/exp2.cpp)
-ament_target_dependencies(exp2 rclcpp geometry_msgs std_msgs Eigen3)
+add_executable(vel2wheels src/vel2wheels.cpp)
+ament_target_dependencies(vel2wheels rclcpp geometry_msgs std_msgs Eigen3)
 
-add_executable(exp3 src/exp3.cpp)
-ament_target_dependencies(exp3 rclcpp sensor_msgs std_msgs)
+add_executable(quat2yaw src/quat2yaw.cpp)
+ament_target_dependencies(quat2yaw rclcpp sensor_msgs std_msgs)
+
+add_executable(pd_ctl src/pd_ctl.cpp)
+ament_target_dependencies(pd_ctl rclcpp geometry_msgs std_msgs Eigen3)
 
 # nodes
 install(TARGETS
-  exp1
-  exp2
-  exp3
+  cmd_vel_check
+  vel2wheels
+  quat2yaw
+  pd_ctl
 
   DESTINATION lib/${PROJECT_NAME}/
 )

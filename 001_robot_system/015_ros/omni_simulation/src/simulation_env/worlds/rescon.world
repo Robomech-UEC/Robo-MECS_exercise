@@ -17,25 +17,11 @@
 
     <!-- field -->
     <include>
-      <uri>model://world_config</uri>
-      <!-- <uri>world_config</uri> -->
+      <uri>model://ground_plane</uri>
     </include>
-
-    <!-- <model name="world_origin">
-      <static>true</static>
-      <pose>0 0 0 0 0 0</pose>
-      <link name="origin_link">
-        <pose>0 0 0 0 0 0</pose>
-      </link>
-    </model>
-
-    <plugin name="gazebo_ros" filename="libgazebo_ros_init.so">
-      <ros>
-        <namespace>/</namespace>
-      </ros>
-    </plugin>
-    <plugin name="gazebo_ros_api_plugin" filename="libgazebo_ros_api_plugin.so"/> -->
-
+    <!-- <include>
+      <uri>model://world_config</uri>
+    </include> -->
 
     <gravity>0 0 -9.81</gravity>
 

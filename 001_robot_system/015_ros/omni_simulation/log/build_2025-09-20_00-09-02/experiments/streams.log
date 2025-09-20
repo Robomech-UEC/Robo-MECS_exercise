@@ -1,6 +1,0 @@
-[0.010s] Invoking command in '/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/build/experiments': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/keyboard_joy:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/build/experiments -- -j16 -l16
-[0.033s] [ 50%] [32mBuilding CXX object CMakeFiles/exp1.dir/src/exp1.cpp.o[0m
-[0.890s] gmake[2]: *** [CMakeFiles/exp1.dir/build.make:76: CMakeFiles/exp1.dir/src/exp1.cpp.o] Interrupt
-[0.890s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/exp1.dir/all] Interrupt
-[0.890s] gmake: *** [Makefile:146: all] Interrupt
-[0.896s] Invoked command in '/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/build/experiments' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/install/keyboard_joy:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech/Robo-MECS_exercise/001_robot_system/015_ros/omni_simulation/build/experiments -- -j16 -l16

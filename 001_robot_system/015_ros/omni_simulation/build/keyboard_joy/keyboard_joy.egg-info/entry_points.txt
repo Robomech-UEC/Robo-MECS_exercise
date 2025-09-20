@@ -1,2 +1,0 @@
-[console_scripts]
-joy_node = keyboard_joy.joy_node:main
