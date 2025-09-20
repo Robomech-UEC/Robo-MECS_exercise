@@ -67,8 +67,8 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        # set_model_env,
-        # gazebo,
+        set_model_env,
+        gazebo,
         # robot_state_publisher,
         # rviz2,
 

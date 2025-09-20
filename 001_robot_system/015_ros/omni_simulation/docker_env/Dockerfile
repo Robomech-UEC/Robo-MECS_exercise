@@ -9,6 +9,7 @@ RUN apt-get update \
 RUN apt-get update \
     && apt-get install -y ros-humble-ros2-control \
     && apt-get install -y ros-humble-ros2-controllers \
+    && apt-get install -y ros-humble-gazebo-ros2-control \
     && apt-get install -y ros-humble-joint-state-publisher \
     && apt-get install -y ros-humble-joint-state-publisher-gui \
 
