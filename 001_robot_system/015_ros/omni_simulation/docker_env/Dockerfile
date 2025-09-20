@@ -6,5 +6,6 @@ RUN apt-get update \
     && apt-get install libeigen3-dev \
     && rm -rf /var/lib/apt/lists
 
-RUN git clone -b main https://github.com/Robomech-UEC/Robo-MECS.git \
+RUN cd /home/ubuntu/Documents \
+    && git clone -b main https://github.com/Robomech-UEC/Robo-MECS.git \
     && git clone -b main https://github.com/Robomech-UEC/Robo-MECS_exercise.git\
