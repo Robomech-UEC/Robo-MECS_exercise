@@ -72,10 +72,19 @@ def generate_launch_description():
         # robot_state_publisher,
         # rviz2,
 
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(
-                [FindPackageShare(pkg_name), '/launch/robot_spawner.launch.py']
-            ),
-            launch_arguments={'robot_name': 'orca', 'spawn_x': '0.9', 'spawn_y' : '2.25'}.items()
-        ),
+        TimerAction(
+            period=5.0,
+            actions=[
+                IncludeLaunchDescription(
+                    PythonLaunchDescriptionSource(
+                        [FindPackageShare(pkg_name), '/launch/robot_spawner.launch.py']
+                    ),
+                    launch_arguments={
+                        'robot_name': 'orca',
+                        'spawn_x': '0.9',
+                        'spawn_y': '2.25'
+                    }.items()
+                )
+            ]
+        )
     ])
