@@ -67,24 +67,15 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        set_model_env,
-        gazebo,
+        # set_model_env,
+        # gazebo,
         # robot_state_publisher,
         # rviz2,
 
-        TimerAction(
-            period=5.0,
-            actions=[
-                IncludeLaunchDescription(
-                    PythonLaunchDescriptionSource(
-                        [FindPackageShare(pkg_name), '/launch/robot_spawner.launch.py']
-                    ),
-                    launch_arguments={
-                        'robot_name': 'orca',
-                        'spawn_x': '0.9',
-                        'spawn_y': '2.25'
-                    }.items()
-                )
-            ]
-        )
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                [FindPackageShare(pkg_name), '/launch/robot_spawner.launch.py']
+            ),
+            launch_arguments={'robot_name': 'orca', 'spawn_x': '0.9', 'spawn_y' : '2.25'}.items()
+        ),
     ])
